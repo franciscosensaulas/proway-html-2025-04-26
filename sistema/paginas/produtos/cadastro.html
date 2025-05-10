@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardaTreco</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.png">
+</head>
+
+<body>
+    <a href="../../paginas/home.html">
+        <img src="../../assets/logo.png" width="20"> GuardaTreco
+    </a>
+    <br>
+    <a href="index.html">Produtos</a>
+
+    <form action="index.html" method="get">
+        <!--     
+        Nome
+        Unidade de Medida
+        Preço
+        Categoria
+        Imagem
+        Fornecedor
+        Importado ou não -->
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" required name="nome">
+        </div>
+
+        <div>
+            <label for="campo-unidade-medida">Unidade de Medida</label>
+            <select required name="unidadeMedida">
+                <option value="TB">Terabyte</option>
+                <option value="GB">Gigabyte</option>
+                <option value="MB">Megabyte</option>
+                <option value="UN">Unidade</option>
+                <option value="PC">Peça</option>
+                <option value="DZ">Duzia</option>
+                <option value="CX">Caixa</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="campo-preco">Preço</label>
+            <input type="number" step="0.5" id="campo-preco" name="preco" required>
+        </div>
+        <div>
+            <label for="campo-categoria">Categoria</label>
+            <select id="campo-categoria" name="categoria" required>
+                <option value="1">Frutas</option>
+                <option value="2">Mundo Aberto</option>
+                <option value="3">RPG</option>
+            </select>
+        </div>
+        <div>
+            <label for="campo-fornecedor">
+                <select name="fornecedor" id="campo-fornecedor">
+                    <option value="1">Rockstar</option>
+                    <option value="2">Ceasa</option>
+                    <option value="3">Valve</option>
+                    <option value="4">Sadia</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>Importado</label>
+            <div>
+                <input type="radio" id="campo-importado-sim" name="importado" value="true">
+                <label for="campo-importado-sim">Sim</label>
+            </div>
+            <div>
+                <input type="radio" id="campo-importado-nao" name="importado" value="false">
+                <label for="campo-importado-nao">Não</label>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="campo-fisico" name="fisico" value="sim">
+            <label for="campo-fisico">Produto Físico</label>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</body>
+
+</html>
