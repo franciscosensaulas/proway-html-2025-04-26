@@ -5,20 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuardaTreco</title>
     <link rel="icon" type="image/png" href="../../assets/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    
+        .logo a {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    
+        img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    
+        i {
+            margin-right: 5px;
+        }
+    
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+    
+        form div {
+            margin-bottom: 20px;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #495057;
+        }
+    
+        input[type="text"] {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        div.acao-cadastrar{
+            display: flex;
+            justify-content: end;
+        }
+    
+        button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #17a2b8; /* info */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+    
+        button:hover {
+            background-color: #138496;
+        }
+    </style>
+    
 </head>
 <body>
-    <a href="../../paginas/home.html">
-        <img src="../../assets/logo.png" width="20"> GuardaTreco
-    </a>
+    <div class="logo">
+        <a href="../../paginas/home.html">
+            <img src="../../assets/logo.png" width="20"> GuardaTreco
+        </a>
+    </div>
     <br>
-    <a href="index.html">Categorias</a>
+    <a href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>Categorias
+    </a>
 
     <form action="index.html" method="get">
         <div>
             <label for="campo-nome">Nome</label>
-            <input type="text" id="campo-nome" minlength="3" required maxlength="20">
+            <input type="text" id="campo-nome" minlength="3" required maxlength="20" name="nome">
         </div>
-        <button type="submit">Cadastrar</button>
+
+        <div class="acao-cadastrar">
+            <button type="submit">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Cadastrar
+            </button>
+        </div>
     </form>
+    <script src="https://kit.fontawesome.com/3c32900202.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,19 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuardaTreco</title>
     <link rel="icon" type="image/png" href="../../assets/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+
+        img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Link principal (logo + título) */
+        a.logo {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Botão padrão base */
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+
+            font-size: 14px !important;
+            font-weight: normal !important;
+        }
+
+        div.cadastrar{
+            display: flex;
+            justify-content: end;
+        }
+
+        /* Botão info (Cadastro Categoria) */
+        .btn-info {
+            background-color: #17a2b8;
+            color: #fff;
+            border-color: #17a2b8;
+        }
+
+        .btn-info:hover {
+            background-color: #138496;
+        }
+
+        /*  class="btn btn-warning"* Botão warning (Editar) */
+        table .btn-warning {
+            background-color: #ffc107;
+            color: #212529;
+            border-color: #ffc107;
+        }
+
+        table .btn-warning:hover {
+            background-color: #e0a800;
+        }
+
+        /* Botão outline-danger (Apagar) */
+        table .btn-outline-danger {
+            background-color: transparent;
+            color: #dc3545;
+            border: 1px solid #dc3545;
+        }
+
+        table .btn-outline-danger:hover {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+
 </head>
+
 <body>
-    <a href="../../paginas/home.html">
+    <a href="../../paginas/home.html" class="logo">
         <img src="../../assets/logo.png" width="20"> GuardaTreco
     </a>
     <h1>Lista de categorias</h1>
 
-    <a href="cadastro.html">Cadastro Categoria</a>
-
+    <div class="cadastrar">
+        <a href="cadastro.html" class="btn btn-info">
+            <i class="fa-solid fa-plus"></i>
+            Cadastro Categoria
+        </a>
+    </div>
+        
     <form action="#" method="get">
         <label>Pesquisa</label>
         <input type="text">
@@ -32,27 +179,48 @@
                 <td>1</td>
                 <td>Camisa</td>
                 <td>
-                    <a href="#">Editar</a>
-                    <a href="#">Apagar</a>
+                    <a href="#" class="btn btn-warning">
+                        <i class="fa-solid fa-pencil"></i>
+                        Editar
+                    </a>
+                    <a href="#" class="btn btn-outline-danger">
+                        <i class="fa-solid fa-trash"></i>
+                        Apagar
+                    </a>
                 </td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Calça</td>
                 <td>
-                    <a href="#">Editar</a>
-                    <a href="#">Apagar</a>
+                    <a href="#" class="btn btn-warning">
+                        <i class="fa-solid fa-pencil"></i>
+                        Editar
+                    </a>
+                    <a href="#" class="btn btn-outline-danger">
+                        <i class="fa-solid fa-trash"></i>
+                        Apagar
+                    </a>
                 </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Sapato</td>
                 <td>
-                    <a href="#">Editar</a>
-                    <a href="#">Apagar</a>
+                    <a href="#" class="btn btn-warning">
+                        <i class="fa-solid fa-pencil"></i>
+                        Editar
+                    </a>
+                    <a href="#" class="btn btn-outline-danger">
+                        <i class="fa-solid fa-trash"></i>
+                        Apagar
+                    </a>
                 </td>
             </tr>
         </tbody>
+        <!-- franciscosens.com -> Fundamentos HTML 5 -->
     </table>
+    <script src="https://kit.fontawesome.com/3c32900202.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
